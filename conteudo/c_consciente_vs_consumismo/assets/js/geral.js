@@ -30,31 +30,13 @@ jQuery("document").ready(function($){
   }
 
 
-  $(".btn-background").click(function(){
-    if($(".btn-background").hasClass('bg-claro')){
-      $(".btn-background").removeClass('bg-claro')
-      $(".btn-background").addClass("bg-escuro");
-      $(".layer-preta").css("display","block");
-      $(".container").css("background","transparent");
-      $("h2").css("color","#fff");
-      $("h3").css("color","#fff");
-      $("h4").css("color","#fff");
-      $("h5").css("color","#fff");
-      $("p").css("color","#fff");
-      $("li").css("color","#fff");
-      $("figcaption").css("color","#fff");
-    }else if($(".btn-background").hasClass('bg-escuro')){
-      $(".btn-background").removeClass('bg-escuro')
-      $(".btn-background").addClass("bg-claro");
-      $(".layer-preta").css("display","none");
-      $(".container").css("background","#fff");
-      $("h2").css("color","#000");
-      $("h3").css("color","#000");
-      $("h4").css("color","#000");
-      $("h5").css("color","#000");
-      $("p").css("color","#000");
-      $("li").css("color","#000");
-      $("figcaption").css("color","#000");
+  $(".btn-tema_pagina").click(function(){
+    if($("body").hasClass('bg-claro')){
+      $("body").removeClass('bg-claro');
+      $("body").addClass("bg-escuro");
+    }else if($("body").hasClass('bg-escuro')){
+      $("body").removeClass('bg-escuro');
+      $("body").addClass("bg-claro");
     }
   });
 
