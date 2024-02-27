@@ -53,6 +53,8 @@ jQuery("document").ready(function($){
   }
   if (tema_pagina == 'bg-escuro'){
     $("body").addClass("bg-escuro");
+  }else{
+    $("body").addClass("bg-claro");
   }
 
 });
