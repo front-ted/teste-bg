@@ -15,8 +15,9 @@ $('.caixa-container button.btpluscaixa').click(function () {
 jQuery("document").ready(function($){
 
   var pg_number = parseInt(window.location.href.split('?')[1].split('=')[1]);
+  var tema_pagina;
 
-  //alert('Página: '+pg_number);
+  //localStorage.clear();
 
   if(pg_number == 1){
     //document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_html1.png')";
@@ -34,10 +35,24 @@ jQuery("document").ready(function($){
     if($("body").hasClass('bg-claro')){
       $("body").removeClass('bg-claro');
       $("body").addClass("bg-escuro");
+      localStorage.setItem('tema_pagina', 'bg-escuro');
     }else if($("body").hasClass('bg-escuro')){
       $("body").removeClass('bg-escuro');
       $("body").addClass("bg-claro");
+      localStorage.setItem('tema_pagina', 'bg-claro');
+    }else{
+      $("body").addClass("bg-escuro");
+      localStorage.setItem('tema_pagina', 'bg-escuro');
     }
   });
+
+  tema_pagina = localStorage.getItem('tema_pagina');  
+
+  if (tema_pagina == 'bg-claro'){
+    $("body").addClass("bg-claro");
+  }
+  if (tema_pagina == 'bg-escuro'){
+    $("body").addClass("bg-escuro");
+  }
 
 });
