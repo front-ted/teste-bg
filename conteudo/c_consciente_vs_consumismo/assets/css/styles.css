@@ -992,14 +992,105 @@ figure img {
   display: none;
 }
 
-.video-youtube{
+
+
+.espera-video{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 20px;
+  color: #fff;
   width: 640px;
   height: 360px;
+  box-shadow: #333 5px 5px 6px;
+  background-color: #292929;
+  margin: 40px auto;
+  position: relative;
+  z-index: 5;
+}
+.video-youtube {
+  width: 640px;
+  height: 360px;
+  border-radius: 10px;
   margin: 40px auto;
   display: block;
-  border-radius: 20px;
-  filter: drop-shadow(#212529 4px 4px 4px);
+  box-shadow: #333 5px 5px 6px;
 }
+
+
+/*-------- NOVO CARD --------*/
+.novo-card .card{
+  position: relative;
+  width: 400px;
+  margin: auto;
+  margin-top: -60px;
+  margin-bottom: -60px;
+  border: none;
+  background: transparent !important;
+  transition: all 0.5s;
+}
+.novo-card .card:hover{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.novo-card .card .face {
+  width: 400px;
+  height: 200px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.novo-card .card .face.face1{
+  position: relative;
+  background: #2A8080;
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  transform: translateY(100px);
+}
+.novo-card .card:hover .face.face1{
+  transform: translateY(0px);
+}
+.novo-card .card .face.face1 .content {
+  opacity: 1;
+  transition: 0.5s;
+  text-align: center;
+  font-size: 20px;
+}
+.novo-card .card .face.face1 .content h4{
+  color: #fff !important;
+}
+.novo-card .card:hover .face.face1 .content {
+  opacity: 1;
+}
+.novo-card .card .face.face1 .content{
+  max-width: 360px;
+}
+.novo-card .card .face.face2{
+  position: relative;
+  z-index: 4;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  filter: drop-shadow(#121212 3px 3px 5px);
+  transform: translateY(-100px);
+}
+.novo-card .card:hover .face.face2{
+  transform: translateY(0);
+}
+.novo-card .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  color: #414141;
+  font-family: sourcesans-regular, roboto !important;
+  font-size: 16px;
+}
+
+/*-------- /NOVO CARD --------*/
 
 
 
