@@ -1082,11 +1082,10 @@ figure img {
 .novo-card .card:hover .face.face2{
   transform: translateY(0);
 }
-.novo-card .card .face.face2 .content p {
+.novo-card .card .face.face2 .content p{
   margin: 0;
   padding: 0;
   color: #414141;
-  font-family: sourcesans-regular, roboto !important;
   font-size: 16px;
 }
 
